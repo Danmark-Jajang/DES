@@ -15,6 +15,8 @@ void main(){
     int i=0, t=0;
 
     //Print Plain Text
+    printf("Enter Plain Text(Char type)>>");
+    scanf("%c",&plain_t);
     printf("Plain Text\t>>");
     for(i=BLOCK_SIZE-1;i>=0;i--){
         t = (plain_t>>i)&0x01; //&0x01 -> to make binary(0 or 1)
